@@ -1,7 +1,4 @@
 body {
-    /* background: url(../images/fancy_header.jpg) top center no-repeat; */
-    background-size: 1200px 859px;
-    /* background: #DEE5E5; */
     background: #360033;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #360033, #0b8793);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #360033, #0b8793); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
