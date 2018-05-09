@@ -166,7 +166,7 @@ opacity: 0.7;
 @media (max-width: 960px) {
     /* For a screen < 960px, this CSS will be read */
     .wrapper {
-        max-width: 960px;
+        width: 900px;
         margin: 0 auto;
     }
   }
