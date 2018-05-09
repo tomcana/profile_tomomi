@@ -1,0 +1,149 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic infos</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+          <img class="header-img" src="/images/fancy_header.png" alt="80s Tomomi Shiba">
+      </header>
+
+      <div class="container intro">
+        <img class="img-circle" src="/images/profle_pic.jpg" alt="Tomomi Shiba">
+        <h1 class="cat-ttl">Tomomi Shiba</h1>
+        <h2>student @Le Wagon</h2>
+
+        <p>
+        I'm from <a href="#ehime">Ehime prefecture</a>.  having good time learning to code and big city:)
+        </p>
+
+        <a href="https://lewagon.com" class="btn">more info</a>
+      </div>
+
+      <div class="container" id="ehime">
+          <h2 class="cat-ttl">In case you don't know Ehime..</h2>
+          <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3359169.380691088!2d133.99375171087024!3d34.694109567233674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x60188b231669c64d%3A0x63540b9f41befc00!2zTGUgV2Fnb24gVG9reW8sIO-8kuS4geebri3vvJHvvJEg55uu6buSIOebrum7kuWMuiDmnbHkuqzpg70!3m2!1d35.633942!2d139.708126!4m5!1s0x354fe5eb4ff98c1b%3A0x4a1825ad87a37b82!2z5p2-5bGx5Z-O44CB44CSNzkwLTAwMDgg5oSb5aqb55yM5p2-5bGx5biC5Li45LmL5YaF77yR!3m2!1d33.845576799999996!2d132.7655346!5e0!3m2!1sja!2sjp!4v1525849138967" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+      </div>
+
+
+
+      <div class="container sns">
+        <ul>
+          <li class="sns-list">
+            <a href="https://www.facebook.com/shibatom84">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </li>
+          <li class="sns-list">
+            <a href="https://www.linkedin.com/in/tomomi-shiba-324137121/">
+              <i class="fab fa-linkedin"></i> Linkedin
+            </a>
+          </li>
+          <li class="sns-list">
+            <a href="https://github.com/tomcana">
+              <i class="fab fa-github"></i> Github
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container movies">
+        <h2 class="cat-ttl">My Favorite movies</h2>
+
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img class="thumbnail" src="/images/movies/ferris_bueller.jpg" alt="Ferris Bueller's Day Off">
+              </td>
+              <td>
+                <h3>1986 - Ferris Bueller's Day Off</h3>
+                <p>A high school wise guy is determined to have a day off from school, despite what the Principal thinks of that.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="thumbnail" src="/images/movies/shawshank_redemption.jpg" alt="
+                The Shawshank Redemption">
+              </td>
+              <td>
+                <h3>1994 - The Shawshank Redemption</h3>
+                <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img class="thumbnail" src="/images/movies/pingpong.jpg" alt="Pinpon">
+              </td>
+              <td>
+                <h3>2002 - Pinpon</h3>
+                <p>The film traces the growth and friendship of two very different high-school ping-pong players. "Peco" Hoshino is a brash, arrogant player, determined to turn pro. He taught his quiet, nerdy...</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container about-page">
+        <h2 class="cat-ttl">About this page</h2>
+        This page has been coded during the <a href="https://lewagon.com/program" target="_blank">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.
+
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fa fa-heart"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-share"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-star"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p id="pageTop"><a href="#"><img class="toparrow" src="/images/arrow.png" alt="arrow"></a></p>
+
+    <script>
+    $(function(){
+    var topBtn=$('#pageTop');
+    topBtn.hide();
+
+    $(window).scroll(function(){
+      if($(this).scrollTop()>80){
+        topBtn.fadeIn();
+
+      }else{
+        topBtn.fadeOut();
+      }
+    });
+    topBtn.click(function(){
+      $('body,html').animate({
+      scrollTop: 0},500);
+      return false;
+    });
+
+
+    });
+  </script>
+  </body>
+</html>
